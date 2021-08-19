@@ -1,0 +1,16 @@
+.Product-item{
+    background-color: rgb(184, 231, 245) !important;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.product-list{
+    background-color: rgb(12, 12, 12) !important;
+    margin: 10px;
+    padding: 10px;
+}
+.topnav{
+    background-color:rgb(103, 70, 248) !important;
+    margin: 10px;
+    padding: 10px;
+}
