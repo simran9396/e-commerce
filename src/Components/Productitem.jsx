@@ -1,12 +1,22 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { Card, Button, Row, Col } from "react-bootstrap";
+import { Card, Button, Row, Col, Form ,Image} from "react-bootstrap";
 
-export const Productitem = () => {
+export const Productitem = ({item}) => {
   const dispatch = useDispatch();
+  console.log("item===>", item)
   return (
-    <Card className="Product-item">
+    <Card  style={{ width: '18rem'}}className="Product-item">
       <Row>
+        <Image src={`${item.image}`} width="200px" height="300px"/>
+      </Row>
+      <Row>
+        <Form.Label>&#36;{item.price} </Form.Label>
+      </Row>
+      <Row>
+        <Form.Label>{item.title}</Form.Label>
+      </Row>
+      <Row className="button-bar">
         
         <Col>
           <Button
@@ -18,8 +28,9 @@ export const Productitem = () => {
             }
           >
             -
-          </Button>
+          </Button> 
         </Col>
+        Add Product
         <Col>
           <Button
             onClick={() =>

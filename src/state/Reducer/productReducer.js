@@ -6,16 +6,16 @@ export const productReducer = (state = {
         return {
 
             ...state,
-            product: [...action.data, ...state.product],
- 
+            product: [...action.data],
+
         }
     }
     if (action.type === "REMOVE_PRODUCT") {
-          const newData=state.product.filter((item)=>item !==action.data)
+        const newData = state.product.filter((item) => item !== action.data)
         // state.product.pop();
         return {
-              ...state,
-            product:newData
+            ...state,
+            product: newData
             // product:state.product,
         }
     }

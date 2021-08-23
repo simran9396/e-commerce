@@ -14,3 +14,11 @@
     margin: 10px;
     padding: 10px;
 }
+.img{
+    height: 100px !important;
+    width: 300px !important;
+    margin: 10px;
+}
+.button-bar{
+    background-color: #2196f3;
+}
