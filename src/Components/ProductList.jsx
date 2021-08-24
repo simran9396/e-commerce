@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Card, Row, Col } from "react-bootstrap";
 import { Productitem } from "./Productitem";
 import { useSelector } from "react-redux";
-import { Productdetails } from "./Productdetails";
+
 
 export const ProductList = ({ search }) => {
   const myproducts = useSelector((state) => state.productReducer.product);
@@ -29,7 +29,7 @@ export const ProductList = ({ search }) => {
           </Col>
         ))}
       </Row>
-      <Productdetails/>
+      
     </Card>
   );
 };

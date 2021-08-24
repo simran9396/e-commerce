@@ -10,6 +10,11 @@ export const productReducer = (state = {
 
         }
     }
+    if (action.type=="SELECTED_PRODUCT-ID")
+        return {
+            ...state,
+            selectedproductid:[action.data]
+        }
     if (action.type === "REMOVE_PRODUCT") {
         const newData = state.product.filter((item) => item !== action.data)
         // state.product.pop();
