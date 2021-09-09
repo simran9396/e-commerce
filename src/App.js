@@ -1,17 +1,20 @@
 import './App.css';
 import React, {useEffect} from 'react'
-import { Home } from './Components/Home';
+
 import {Provider, useDispatch} from 'react-redux'
-import {configStore} from './state/store/configStore'
+// import {configStore} from './state/store/configStore'
+import {configstore} from './newapplication/store/congigstore'
+import { Reduxapp } from './newapplication/Reduxapp';
 
 
 function App() {
-  const localstore=configStore()
+  const localstore=configstore()
  
   return (
     <div>
       <Provider store={localstore}>
-     <Home/>
+     {/* <Home/> */}
+     <Reduxapp/>
      </Provider>
      </div>
   );

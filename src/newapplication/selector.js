@@ -1,0 +1,1 @@
+export const getAllinfo=(state)=>state.Appreducer.groups;
